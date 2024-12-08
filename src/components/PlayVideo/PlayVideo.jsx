@@ -7,7 +7,8 @@ import share from '../../assets/share.png'
 import save from '../../assets/save.png'
 import megan from '../../assets/megan.png'
 import user_profile from '../../assets/user_profile.jpg'
-import { API_KEY } from '../../data'
+import { API_KEY, value_converter } from '../../data'
+import moment from 'moment'
 
 const PlayVideo = ({videoId}) => {
 
@@ -28,7 +29,7 @@ const PlayVideo = ({videoId}) => {
        <iframe src={`https://www.youtube.com/embed/${videoId}?autoplay=1`} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
        <h3>{apiData?apiData.snippet.title:"Title Here"}</h3>
        <div className='play-video-info'>
-         <p>1432 views &bull; 3 days ago</p>
+         <p>{apiData?value_converter(apiData.statistics.viewCount):"16K"} views &bull; {moment(apiData.snippet.publishedAt).fromNow()}</p>
          <div>
            <span><img src={like} alt="" />215</span>
            <span><img src={dislike} alt="" />0</span>
