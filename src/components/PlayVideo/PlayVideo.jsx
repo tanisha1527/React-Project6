@@ -31,26 +31,25 @@ const PlayVideo = ({videoId}) => {
        <div className='play-video-info'>
          <p>{apiData?value_converter(apiData.statistics.viewCount):"16K"} views &bull; {apiData?moment(apiData.snippet.publishedAt).fromNow():""}</p>
          <div>
-           <span><img src={like} alt="" />215</span>
-           <span><img src={dislike} alt="" />0</span>
-           <span><img src={share} alt="" />215</span>
-           <span><img src={save} alt="" />215</span>
+           <span><img src={like} alt="" />{apiData?value_converter(apiData.statistics.likeCount):166}</span>
+           <span><img src={dislike} alt="" /></span>
+           <span><img src={share} alt="" /></span>
+           <span><img src={save} alt="" /></span>
          </div>
        </div>
        <hr/>
        <div className="publisher">
          <img src={megan} alt="" />
          <div>
-           <p>BroCode</p>
+           <p>{apiData?apiData.snippet.channelTitle:""}</p>
            <span>1M Subscribers</span>
          </div>
          <button>Subscribe</button>
        </div>
        <div className="video-desc">
-         <p>Channel that makes learning Easy</p>
-         <p>Subscribe BroCode to watch more tutorials on coding</p>
+         <p>{apiData?value_converter(apiData.snippet.description.slice(0,250)):"Description Here"}</p>
          <hr />
-         <h4>150 comments</h4>
+         <h4>{apiData?value_converter(apiData.statistics.commentCount):105} comments</h4>
          <div className='comment'>
            <img src={user_profile} alt="" />
            <div>
