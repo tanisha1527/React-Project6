@@ -62,3 +62,64 @@
     padding-bottom: 2px;
     border-bottom: 3px solid red;
 }
+
+@media (max-width:768px){
+     .sidebar{
+         width: 15%;
+         padding-top: 70px;
+     }
+     .sidebar hr{
+         width: 85%;
+     }
+     .subscribed-list h3{
+         font-size: 12px;
+     }
+     .subscribed-list img{
+          width: 20px;
+     }
+     .side-link{
+          margin-bottom: 15px;
+     }
+     .side-link p{
+         font-size: 8px;
+     }
+     .small-sidebar{
+         width: 8%;
+     }
+     .small-sidebar hr{
+         width: 40%;
+     }
+}
+
+@media (max-width:480px){
+      .sidebar{
+           display: none;
+      }
+      .sidebar hr{
+           width: 60%;
+      }
+      .side-link{
+           margin-bottom: 10px;
+      }
+      .subscribed-list h3{
+           font-size: 10px;
+      }
+      .subscribed-list img{
+           width: 18px;
+      }
+      .small-sidebar{
+            display: none;
+      }
+      .small-sidebar p,.small-sidebar h3{
+           display: none;
+      }
+      .small-sidebar hr{
+           width: 30%;
+      }
+      .side-link img{
+           display: none;
+      }
+      .side-link{
+           justify-content: center;
+      }
+}

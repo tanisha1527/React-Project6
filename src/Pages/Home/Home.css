@@ -9,3 +9,23 @@
 .large-container{
     padding-left: 7%;
 }
+
+@media (max-width:768px){
+      .large-container{
+          padding-left: 10%;
+      }
+}
+
+@media(max-width:480px){
+      .container{
+         width: 110%;
+         margin-left: -40px;
+      }
+}
+
+@media(max-width:320px){
+      .container{
+          width: 113%;
+      }
+}
+

@@ -134,3 +134,96 @@
    margin-right: 20px;
    color: #5a5a5a;
 }
+
+@media(max-width:768px){
+     .play-video{
+        flex-basis: 100%;
+        margin-bottom: 15px;
+     }
+     .play-video iframe{
+        height: 50vw;
+     }
+     .play-video h3{
+         font-size: 18px;
+     }
+     .play-video-info{
+         font-size: 12px;
+         justify-content: flex-start;
+     }
+     .play-video-info span{
+         margin-left: 8px;
+     }
+     .publisher{
+         flex-direction: column;
+         align-items: flex-start;
+     }
+     .publisher img{
+         width: 35px;
+     }
+     .publisher div p{
+         font-size: 16px;
+     }
+     .publisher div span{
+         font-size: 12px;
+     }
+     .publisher button{
+         width: 100%;
+         margin-top: 10px;
+         padding: 10px 0;
+     }
+     .video-desc{
+         padding-left: 20px;
+     }
+     .video-desc h4{
+         font-size: 12px;
+     }
+     .comment{
+         flex-direction: column;
+         align-items: flex-start;
+     }
+     .comment img{
+         width: 30px;
+     }
+     .comment h3{
+         font-size: 12px;
+     }
+     .comment h3 span{
+         font-size: 10px;
+     }
+     .comment-action{
+          font-size: 12px;
+     }
+     .comment-action img{
+          width: 12px;
+     }
+}
+
+@media(max-width:480px){
+      .play-video iframe{
+           height: 60vw;
+      }
+      .play-video h3{
+           font-size: 16px;
+      }
+      .play-video-info{
+           font-size: 10px;
+      }
+      .publisher div p{
+           font-size: 14px;
+      }
+      .publisher div span{
+           font-size: 10px;
+      }
+      .video-desc h4{
+           font-size: 10px;
+      }
+      .comment h3{
+          font-size: 12px;
+      }
+      .comment h3 span{
+          font-size: 10px;
+      }
+      .comment-action{
+           font-size: 12px;
+      }
+}

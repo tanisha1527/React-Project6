@@ -21,3 +21,45 @@
    font-size: 13px;
    margin-bottom: 5px;
 }
+
+@media(max-width:768px){
+      .recommended{
+           flex-basis: 50%;
+      }
+      .side-video-list{
+           flex-wrap: wrap;
+           margin-bottom: 12px;
+      }
+      .side-video-list img{
+           width: 100%;
+           flex-basis: 100%;
+      }
+      .video-info{
+           flex-basis: 100%;
+           margin-top: 10px;
+      }
+      .video-info h4{
+           font-size: 12px;
+      }
+}
+
+@media (max-width:480px){
+     .recommended{
+           flex-basis: 100%;
+     }
+     .side-video-list{
+          flex-direction: column;
+          margin-bottom: 15px;
+     }
+     .side-video-list img{
+          width: 100%;
+          flex-basis: 100%;
+     }
+     .video-info{
+          flex-basis: 100%;
+          margin-top: 10px;
+     }
+     .video-info h4{
+         font-size: 11px;
+     }
+}
