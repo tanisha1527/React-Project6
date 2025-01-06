@@ -64,8 +64,9 @@
       }
 }
 
-@media(max-width:320px){
+@media(max-width:425px){
       .feed{
-         margin-left: -10px;
+         margin-right: 1%;
+         margin-left: 3%;
       }
 }

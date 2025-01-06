@@ -102,11 +102,11 @@ nav{
      }
 }
 
-@media(max-width:320px){
+@media(max-width:425px){
       .nav-middle .search-box{
             display: none;
       }
       .nav-right{
-           margin-right: -22px;
+           margin-right: -20px;
       }
 }
